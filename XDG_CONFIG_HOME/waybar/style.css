@@ -22,6 +22,10 @@ window#waybar {
   padding: 0 6px;
 }
 
+.modules-center {
+  margin: 0 6px;
+}
+
 tooltip {
   background: @background-solid;
   border: 1px solid @border;

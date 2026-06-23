@@ -71,17 +71,6 @@
     "on-click": "nm-connection-editor"
   },
 
-  "bluetooth": {
-    "format": "󰂯 {status}",
-    "format-disabled": "",
-    "format-off": "",
-    "format-no-controller": "",
-    "tooltip-format-connected": "{num_connections} connected\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias}: {device_battery_percentage}%",
-    "on-click": "overskride"
-  },
-
   "battery": {
     "interval": 30,
     "states": {

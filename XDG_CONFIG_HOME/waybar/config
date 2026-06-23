@@ -31,7 +31,6 @@
     "backlight",
     "pulseaudio",
     "network",
-    "bluetooth",
     "battery",
     "hyprland/language",
     "keyboard-state",

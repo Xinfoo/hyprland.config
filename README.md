@@ -80,11 +80,9 @@ These are some graphical tools on the desktop.
 - hypridle
 - hyprpaper
 - hyprpicker
-- hyprsysteminfo
 - hyprpwcenter
 - hyprshutdown
 - hyprland-qt-support
-- hyprqt6engine
 
 **Waybar and its Dependent Components**
 - waybar
@@ -96,7 +94,6 @@ These are some graphical tools on the desktop.
 - pacman-contrib
 - pavucontrol
 - network-manager-applet
-- overskride
 - lm_sensors
 
 **Notification Tool**

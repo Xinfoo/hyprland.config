@@ -32,6 +32,11 @@ local terminal    = "alacritty"
 local fileManager = "thunar"
 local menu        = "hyprlauncher"
 
+local function app_cmd(command)
+    local escaped = command:gsub("'", "'\\''")
+    return "sh -lc 'if command -v uwsm >/dev/null 2>&1; then uwsm app -- " .. escaped .. " || exec " .. escaped .. "; else exec " .. escaped .. "; fi'"
+end
+
 
 ----------------
 ---- 自启动 ----
@@ -49,8 +54,8 @@ local menu        = "hyprlauncher"
 -- end)
 
 hl.on("hyprland.start", function()
-    hl.exec_cmd("uwsm app -- ~/.config/waybar/launch.sh")
-    hl.exec_cmd("uwsm app -- nm-applet")
+    hl.exec_cmd(app_cmd("~/.config/waybar/launch.sh"))
+    hl.exec_cmd(app_cmd("nm-applet"))
 end)
 
 
@@ -265,7 +270,7 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("uwsm app -- ~/.config/waybar/launch.sh"))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(app_cmd("~/.config/waybar/launch.sh")))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- 仅适用于 dwindle 布局
 

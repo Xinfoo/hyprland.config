@@ -6,6 +6,7 @@ My Hyprland Configuration.
 
 - `ROOT_FS/` maps to the filesystem root `/`.
 - `XDG_CONFIG_HOME/` maps to `${XDG_CONFIG_HOME:-$HOME/.config}`.
+- `XDG_CONFIG_HOME/hypr/lua/` contains split Hyprland Lua configuration modules.
 
 ## Packages
 
@@ -15,8 +16,19 @@ These are the required packages to install.
 
 These are some essential basic non-graphical software.
 
-**Graphic Components**
+**Graphics**
 - mesa
+- vulkan-icd-loader
+- vulkan-tools
+
+AMD:
+- vulkan-radeon
+- libva-mesa-driver
+- mesa-vdpau
+
+Intel:
+- vulkan-intel
+- intel-media-driver
 
 **Network**
 - networkmanager
@@ -32,7 +44,7 @@ These are some essential basic non-graphical software.
 - pipewire-pulse
 - wireplumber
 
-**Desktop portal**
+**Desktop Portal**
 - xdg-desktop-portal
 - xdg-desktop-portal-hyprland
 - xdg-desktop-portal-gtk
@@ -50,7 +62,7 @@ These are some essential basic non-graphical software.
 - ttf-nerd-fonts-symbols
 - ttf-nerd-fonts-symbols-mono
 
-**Login Manager**
+**Session & Login Manager**
 - uwsm
 - libnewt
 - greetd
@@ -110,4 +122,3 @@ These are some graphical tools on the desktop.
 
 **Icon Theme**
 - papirus-icon-theme
-

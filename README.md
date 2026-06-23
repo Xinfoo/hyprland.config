@@ -36,6 +36,7 @@ Intel:
 **Bluetooth**
 - bluez
 - bluez-utils
+- blueman
 
 **Audio & Screen**
 - pipewire

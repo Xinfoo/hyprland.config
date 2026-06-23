@@ -9,6 +9,58 @@ My Hyprland Configuration.
 
 ## Packages
 
+These are the required packages to install.
+
+### Basic Components
+
+These are some essential basic non-graphical software.
+
+**Graphic Components**
+- mesa
+
+**Network**
+- networkmanager
+
+**Bluetooth**
+- bluez
+- bluez-utils
+
+**Audio & Screen**
+- pipewire
+- pipewire-jack
+- pipewire-alsa
+- pipewire-pulse
+- wireplumber
+
+**Desktop portal**
+- xdg-desktop-portal
+- xdg-desktop-portal-hyprland
+- xdg-desktop-portal-gtk
+- xdg-user-dirs
+
+**Clipboard**
+- wl-clipboard
+
+**Fonts**
+- noto-fonts
+- noto-fonts-cjk
+- noto-fonts-emoji
+- noto-fonts-extra
+- ttf-jetbrains-mono
+- ttf-nerd-fonts-symbols
+- ttf-nerd-fonts-symbols-mono
+
+**Login Manager**
+- uwsm
+- libnewt
+- greetd
+- greetd-regreet
+
+### Desktop Components
+
+These are some graphical tools on the desktop.
+
+**Hyprland Components**
 - hyprland
 - hyprlauncher
 - hyprpolkitagent
@@ -21,46 +73,28 @@ My Hyprland Configuration.
 - hyprshutdown
 - hyprland-qt-support
 - hyprqt6engine
+
+**Waybar and its Dependent Components**
 - waybar
-- wl-clipboard
 - cliphist
 - wofi
 - playerctl
 - brightnessctl
 - libnotify
 - pacman-contrib
-- pipewire
-- pipewire-jack
-- pipewire-alsa
-- pipewire-pulse
-- wireplumber
 - pavucontrol
-- networkmanager
 - network-manager-applet
-- bluez
-- bluez-utils
 - overskride
 - lm_sensors
+
+**Notification Tool**
 - mako
-- xdg-desktop-portal
-- xdg-desktop-portal-hyprland
-- xdg-desktop-portal-gtk
-- xdg-user-dirs
+
+**Library**
 - qt5-wayland
 - qt6-wayland
-- uwsm
-- libnewt
-- greetd
-- greetd-regreet
-- alacritty
-- noto-fonts
-- noto-fonts-cjk
-- noto-fonts-emoji
-- noto-fonts-extra
-- ttf-jetbrains-mono
-- ttf-nerd-fonts-symbols
-- ttf-nerd-fonts-symbols-mono
-- papirus-icon-theme
+
+**File Manager**
 - thunar
 - gvfs
 - gvfs-smb
@@ -70,3 +104,10 @@ My Hyprland Configuration.
 - file-roller
 - thunar-archive-plugin
 - thunar-media-tags-plugin
+
+**Terminal**
+- alacritty
+
+**Icon Theme**
+- papirus-icon-theme
+

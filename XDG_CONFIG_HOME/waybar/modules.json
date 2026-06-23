@@ -111,12 +111,6 @@
     "format": "MEM {percentage}%"
   },
 
-  "disk": {
-    "path": "/",
-    "interval": 60,
-    "format": "DISK {percentage_used}%"
-  },
-
   "temperature": {
     "critical-threshold": 80,
     "format": "TEMP {temperatureC}C",

@@ -26,7 +26,6 @@
     "custom/updates",
     "cpu",
     "memory",
-    "disk",
     "temperature",
     "backlight",
     "pulseaudio",

@@ -25,6 +25,7 @@ local menu        = "hyprlauncher"
 hl.on("hyprland.start", function()
     hl.exec_cmd(utils.app_cmd("~/.config/waybar/launch.sh"))
     hl.exec_cmd(utils.app_cmd("nm-applet"))
+    hl.exec_cmd(utils.app_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent"))
     hl.exec_cmd(utils.app_cmd("fcitx5 -d"))
     hl.exec_cmd(utils.app_cmd("wl-paste --type text --watch cliphist store"))
     hl.exec_cmd(utils.app_cmd("wl-paste --type image --watch cliphist store"))

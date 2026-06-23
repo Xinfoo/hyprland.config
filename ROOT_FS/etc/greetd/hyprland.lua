@@ -1,8 +1,8 @@
 hl.monitor({
-    output   = "eDP-1",
-    mode     = "3072x1920@120.00Hz",
-    position = "0x0",
-    scale    = "2",
+    output   = "",
+    mode     = "highrr",
+    position = "auto",
+    scale    = "auto",
 })
 
 hl.on("hyprland.start", function()

@@ -1,0 +1,3 @@
+[default_session]
+command = "dbus-run-session start-hyprland -- -c /etc/greetd/hyprland.conf"
+user = "greeter"

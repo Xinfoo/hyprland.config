@@ -1,4 +1,4 @@
-# Hyprland Configuation
+# Hyprland Configuration
 
 ## Packages
 - hyprland

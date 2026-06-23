@@ -25,6 +25,7 @@ local menu        = "hyprlauncher"
 hl.on("hyprland.start", function()
     hl.exec_cmd(utils.app_cmd("~/.config/waybar/launch.sh"))
     hl.exec_cmd(utils.app_cmd("nm-applet"))
+    hl.exec_cmd(utils.app_cmd("fcitx5 -d"))
 end)
 
 

@@ -1,5 +1,5 @@
 [window]
-padding = {x = 0, y = 0 }
+padding = {x = 2, y = 5 }
 opacity = 0.8
 
 [font]

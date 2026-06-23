@@ -1,4 +1,4 @@
--- 这是一个示例 Hyprland Lua 配置文件。
+-- 这是一个 Hyprland Lua 配置文件。
 -- 更多信息请参考 wiki。
 -- https://wiki.hypr.land/Configuring/Start/
 

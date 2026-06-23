@@ -1,5 +1,7 @@
 # Hyprland Configuration
 
+My Hyprland Configuration.
+
 ## Packages
 - hyprland
 - hyprlauncher

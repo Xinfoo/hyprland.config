@@ -1,4 +1,9 @@
-
+hl.monitor({
+    output   = "eDP-1",
+    mode     = "3072x1920@120.00Hz",
+    position = "0x0",
+    scale    = "2",
+})
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("regreet; hyprctl dispatch 'hl.dsp.exit()'")

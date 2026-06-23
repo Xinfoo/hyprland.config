@@ -27,14 +27,19 @@ hl.on("hyprland.start", function()
     hl.exec_cmd(utils.app_cmd("nm-applet"))
 end)
 
-require("environment")
-require("permissions")
-require("appearance")
-require("input")
-require("binds")({
+
+------------------
+---- 引用配置 ----
+------------------
+
+require("lua.environment")
+require("lua.permissions")
+require("lua.appearance")
+require("lua.input")
+require("lua.binds")({
     terminal    = terminal,
     fileManager = fileManager,
     menu        = menu,
     app_cmd     = utils.app_cmd,
 })
-require("rules")
+require("lua.rules")

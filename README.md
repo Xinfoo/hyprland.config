@@ -2,6 +2,11 @@
 
 My Hyprland Configuration.
 
+## Layout
+
+- `ROOT_FS/` maps to the filesystem root `/`.
+- `XDG_CONFIG_HOME/` maps to `${XDG_CONFIG_HOME:-$HOME/.config}`.
+
 ## Packages
 - hyprland
 - hyprlauncher

@@ -1,0 +1,44 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+  "margin-top": 8,
+  "margin-left": 10,
+  "margin-right": 10,
+  "spacing": 6,
+
+  "include": [
+    "~/.config/waybar/modules.json"
+  ],
+
+  "modules-left": [
+    "custom/appmenu",
+    "hyprland/workspaces",
+    "wlr/taskbar"
+  ],
+
+  "modules-center": [
+    "hyprland/window"
+  ],
+
+  "modules-right": [
+    "custom/player",
+    "custom/updates",
+    "cpu",
+    "memory",
+    "disk",
+    "temperature",
+    "backlight",
+    "pulseaudio",
+    "network",
+    "bluetooth",
+    "battery",
+    "hyprland/language",
+    "keyboard-state",
+    "idle_inhibitor",
+    "custom/cliphist",
+    "tray",
+    "clock",
+    "custom/power"
+  ]
+}

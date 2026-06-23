@@ -8,6 +8,7 @@ My Hyprland Configuration.
 - `XDG_CONFIG_HOME/` maps to `${XDG_CONFIG_HOME:-$HOME/.config}`.
 
 ## Packages
+
 - hyprland
 - hyprlauncher
 - hyprpolkitagent
@@ -20,15 +21,26 @@ My Hyprland Configuration.
 - hyprshutdown
 - hyprland-qt-support
 - hyprqt6engine
+- waybar
 - wl-clipboard
 - cliphist
+- wofi
+- playerctl
+- brightnessctl
+- libnotify
+- pacman-contrib
 - pipewire
 - pipewire-jack
 - pipewire-alsa
 - pipewire-pulse
 - wireplumber
 - pavucontrol
+- networkmanager
 - network-manager-applet
+- bluez
+- bluez-utils
+- overskride
+- lm_sensors
 - mako
 - xdg-desktop-portal
 - xdg-desktop-portal-hyprland

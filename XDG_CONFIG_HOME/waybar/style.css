@@ -1,0 +1,140 @@
+@import "colors.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", "Noto Sans CJK SC", "Noto Sans", sans-serif;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @foreground;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  background: @background;
+  border: 1px solid @border;
+  border-radius: 8px;
+  padding: 0 6px;
+}
+
+tooltip {
+  background: @background-solid;
+  border: 1px solid @border;
+  border-radius: 8px;
+  color: @foreground;
+}
+
+tooltip label {
+  color: @foreground;
+}
+
+#workspaces {
+  padding: 0 2px;
+}
+
+#workspaces button {
+  color: @muted;
+  margin: 4px 2px;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+#workspaces button.active {
+  background: @accent;
+  color: @background-solid;
+}
+
+#workspaces button.urgent {
+  background: @critical;
+  color: @background-solid;
+}
+
+#workspaces button:hover,
+#taskbar button:hover {
+  background: @surface-hover;
+  color: @foreground;
+}
+
+#taskbar button {
+  margin: 4px 2px;
+  padding: 0 6px;
+  border-radius: 6px;
+}
+
+#window {
+  color: @muted;
+  padding: 0 10px;
+}
+
+window#waybar.empty #window {
+  color: transparent;
+}
+
+#custom-appmenu,
+#custom-power,
+#custom-cliphist,
+#idle_inhibitor,
+#tray,
+#clock,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#backlight,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#language,
+#keyboard-state,
+#custom-player,
+#custom-updates {
+  margin: 4px 2px;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+#custom-appmenu,
+#custom-power {
+  color: @accent-strong;
+}
+
+#custom-power:hover,
+#custom-appmenu:hover,
+#custom-cliphist:hover,
+#idle_inhibitor:hover,
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#battery:hover,
+#backlight:hover,
+#custom-player:hover,
+#custom-updates:hover {
+  background: @surface-hover;
+}
+
+#custom-updates.available {
+  background: @warning;
+  color: @background-solid;
+}
+
+#battery.warning,
+#temperature.warning {
+  color: @warning;
+}
+
+#battery.critical,
+#temperature.critical {
+  color: @critical;
+}
+
+#network.disconnected,
+#pulseaudio.muted {
+  color: @muted;
+}

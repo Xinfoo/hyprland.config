@@ -48,6 +48,11 @@ local menu        = "hyprlauncher"
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
 -- end)
 
+hl.on("hyprland.start", function()
+    hl.exec_cmd("uwsm app -- ~/.config/waybar/launch.sh")
+    hl.exec_cmd("uwsm app -- nm-applet")
+end)
+
 
 ------------------
 ---- 环境变量 ----

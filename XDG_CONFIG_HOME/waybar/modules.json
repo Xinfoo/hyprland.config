@@ -1,0 +1,200 @@
+{
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch \"hl.dsp.focus({workspace = 'e-1'})\"",
+    "on-scroll-down": "hyprctl dispatch \"hl.dsp.focus({workspace = 'e+1'})\"",
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 80,
+    "separate-outputs": true,
+    "rewrite": {
+      "(.*) - Brave": "$1",
+      "(.*) - Chromium": "$1",
+      "(.*) - Firefox": "$1",
+      "(.*) - Visual Studio Code": "$1"
+    }
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+      "Alacritty"
+    ]
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%Y-%m-%d %a}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 muted",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+  },
+
+  "network": {
+    "format-wifi": "󰖩 {signalStrength}%",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󰖪 offline",
+    "tooltip-format-wifi": "{ifname} @ {essid}\nIP: {ipaddr}\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}",
+    "tooltip-format-ethernet": "{ifname}\nIP: {ipaddr}\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "nm-connection-editor"
+  },
+
+  "bluetooth": {
+    "format": "󰂯 {status}",
+    "format-disabled": "",
+    "format-off": "",
+    "format-no-controller": "",
+    "tooltip-format-connected": "{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}: {device_battery_percentage}%",
+    "on-click": "overskride"
+  },
+
+  "battery": {
+    "interval": 30,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ]
+  },
+
+  "backlight": {
+    "format": "󰃠 {percent}%",
+    "scroll-step": 5,
+    "on-scroll-up": "brightnessctl -e4 -n2 set 5%+",
+    "on-scroll-down": "brightnessctl -e4 -n2 set 5%-"
+  },
+
+  "cpu": {
+    "format": "CPU {usage}%",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": "MEM {percentage}%"
+  },
+
+  "disk": {
+    "path": "/",
+    "interval": 60,
+    "format": "DISK {percentage_used}%"
+  },
+
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "TEMP {temperatureC}C",
+    "format-critical": "TEMP {temperatureC}C"
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰅶",
+      "deactivated": "󰛊"
+    },
+    "tooltip-format-activated": "Idle inhibitor enabled",
+    "tooltip-format-deactivated": "Idle inhibitor disabled"
+  },
+
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+      "locked": "󰌾",
+      "unlocked": "󰌾"
+    }
+  },
+
+  "hyprland/language": {
+    "format": "KBD {short}"
+  },
+
+  "custom/appmenu": {
+    "format": "󰣇",
+    "tooltip-format": "Application launcher",
+    "on-click": "~/.config/waybar/scripts/appmenu.sh"
+  },
+
+  "custom/cliphist": {
+    "format": "",
+    "tooltip-format": "Clipboard history",
+    "on-click": "~/.config/waybar/scripts/cliphist.sh",
+    "on-click-right": "~/.config/waybar/scripts/cliphist.sh clear"
+  },
+
+  "custom/player": {
+    "exec": "~/.config/waybar/scripts/player.sh",
+    "return-type": "json",
+    "interval": 2,
+    "format": "{text}",
+    "escape": true,
+    "hide-empty-text": true,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous"
+  },
+
+  "custom/updates": {
+    "exec": "~/.config/waybar/scripts/updates.sh",
+    "return-type": "json",
+    "interval": 1800,
+    "format": "{text}",
+    "escape": true,
+    "hide-empty-text": true
+  },
+
+  "custom/power": {
+    "format": "",
+    "tooltip-format": "Power menu",
+    "on-click": "~/.config/waybar/scripts/power.sh"
+  }
+}

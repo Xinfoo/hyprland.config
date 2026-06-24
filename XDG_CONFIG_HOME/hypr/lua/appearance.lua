@@ -5,14 +5,14 @@
 -- 参见 https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in  = 5,
-        gaps_out = 20,
+        gaps_in  = 2,
+        gaps_out = 10,
 
-        border_size = 2,
+        border_size = 1,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            active_border   = { colors = {"rgba(7cc7b2ee)", "rgba(9bdcc9cc)"}, angle = 45 },
+            inactive_border = "rgba(ffffff1a)",
         },
 
         -- 设为 true 以允许通过点击拖拽边框和间隙来调整窗口大小
@@ -25,7 +25,7 @@ hl.config({
     },
 
     decoration = {
-        rounding       = 10,
+        rounding       = 8,
         rounding_power = 2,
 
         -- 调整聚焦窗口与非聚焦窗口的透明度
@@ -34,16 +34,16 @@ hl.config({
 
         shadow = {
             enabled      = true,
-            range        = 4,
-            render_power = 3,
-            color        = 0xee1a1a1a,
+            range        = 10,
+            render_power = 2,
+            color        = 0x66000000,
         },
 
         blur = {
             enabled   = true,
-            size      = 3,
-            passes    = 1,
-            vibrancy  = 0.1696,
+            size      = 4,
+            passes    = 2,
+            vibrancy  = 0.12,
         },
     },
 

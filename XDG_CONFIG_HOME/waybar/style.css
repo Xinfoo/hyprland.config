@@ -96,8 +96,7 @@ window#waybar.empty #window {
 #temperature,
 #language,
 #keyboard-state,
-#custom-player,
-#custom-updates {
+#custom-player {
   margin: 4px 2px;
   padding: 0 8px;
   border-radius: 6px;
@@ -118,14 +117,8 @@ window#waybar.empty #window {
 #bluetooth:hover,
 #battery:hover,
 #backlight:hover,
-#custom-player:hover,
-#custom-updates:hover {
+#custom-player:hover {
   background: @surface-hover;
-}
-
-#custom-updates.available {
-  background: @warning;
-  color: @background-solid;
 }
 
 #battery.warning,

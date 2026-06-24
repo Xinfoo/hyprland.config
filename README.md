@@ -92,7 +92,6 @@ These are some graphical tools on the desktop.
 - playerctl
 - brightnessctl
 - libnotify
-- pacman-contrib
 - pavucontrol
 - network-manager-applet
 - lm_sensors

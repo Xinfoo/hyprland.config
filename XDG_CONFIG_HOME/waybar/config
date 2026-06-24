@@ -23,7 +23,6 @@
   ],
 
   "modules-right": [
-    "custom/updates",
     "cpu",
     "memory",
     "temperature",

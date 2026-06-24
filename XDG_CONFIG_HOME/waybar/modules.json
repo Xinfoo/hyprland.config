@@ -127,16 +127,6 @@
     "tooltip-format-deactivated": "Idle inhibitor disabled"
   },
 
-  "keyboard-state": {
-    "numlock": true,
-    "capslock": true,
-    "format": "{name} {icon}",
-    "format-icons": {
-      "locked": "󰌾",
-      "unlocked": "󰌾"
-    }
-  },
-
   "custom/appmenu": {
     "format": "󰣇",
     "tooltip-format": "Application launcher",

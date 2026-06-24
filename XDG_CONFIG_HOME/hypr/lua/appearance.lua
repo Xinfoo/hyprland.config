@@ -16,7 +16,7 @@ hl.config({
         },
 
         -- 设为 true 以允许通过点击拖拽边框和间隙来调整窗口大小
-        resize_on_border = false,
+        resize_on_border = true,
 
         -- 在启用此选项前，请先阅读 https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/
         allow_tearing = false,

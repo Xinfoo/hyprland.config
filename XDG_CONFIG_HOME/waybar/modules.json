@@ -137,10 +137,6 @@
     }
   },
 
-  "hyprland/language": {
-    "format": "KBD {short}"
-  },
-
   "custom/appmenu": {
     "format": "󰣇",
     "tooltip-format": "Application launcher",

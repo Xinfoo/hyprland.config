@@ -94,7 +94,6 @@ window#waybar.empty #window {
 #memory,
 #disk,
 #temperature,
-#language,
 #keyboard-state,
 #custom-player {
   margin: 4px 2px;

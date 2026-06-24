@@ -23,6 +23,7 @@ local menu        = "hyprlauncher"
 
 -- 参见 https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function()
+    hl.exec_cmd(utils.app_cmd("hyprpaper"))
     hl.exec_cmd(utils.app_cmd("~/.config/waybar/launch.sh"))
     hl.exec_cmd(utils.app_cmd("nm-applet"))
     hl.exec_cmd(utils.app_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent"))

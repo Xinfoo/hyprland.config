@@ -117,16 +117,6 @@
     "format-critical": "TEMP {temperatureC}℃"
   },
 
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": "󰅶",
-      "deactivated": "󰛊"
-    },
-    "tooltip-format-activated": "Idle inhibitor enabled",
-    "tooltip-format-deactivated": "Idle inhibitor disabled"
-  },
-
   "custom/appmenu": {
     "format": "󰣇",
     "tooltip-format": "Application launcher",

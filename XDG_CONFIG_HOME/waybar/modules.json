@@ -11,7 +11,7 @@
 
   "hyprland/window": {
     "format": "{}",
-    "max-length": 48,
+    "max-length": 64,
     "separate-outputs": true,
     "rewrite": {
       "(.*) - Brave": "$1",
@@ -135,7 +135,7 @@
     "return-type": "json",
     "interval": 2,
     "format": "{text}",
-    "max-length": 36,
+    "max-length": 64,
     "escape": true,
     "hide-empty-text": true,
     "on-click": "playerctl play-pause",

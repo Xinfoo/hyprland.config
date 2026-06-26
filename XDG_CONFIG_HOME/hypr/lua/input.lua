@@ -32,7 +32,7 @@ hl.gesture({
 -- 更多信息参见 https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/
 hl.device({
     name          = "elan0676:00-04f3:3195-touchpad",
-    scroll_factor = 1.0,
+    scroll_factor = 0.5,
 })
 
 hl.device({

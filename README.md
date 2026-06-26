@@ -36,7 +36,6 @@ Intel:
 **Bluetooth**
 - bluez
 - bluez-utils
-- blueman
 
 **Audio & Screen**
 - pipewire
@@ -77,11 +76,8 @@ These are some graphical tools on the desktop.
 - hyprland
 - hyprlauncher
 - hyprpolkitagent
-- hyprlock
-- hypridle
 - hyprpaper
 - hyprpicker
-- hyprpwcenter
 - hyprshutdown
 - hyprland-qt-support
 
@@ -94,6 +90,7 @@ These are some graphical tools on the desktop.
 - libnotify
 - pavucontrol
 - network-manager-applet
+- blueman
 - lm_sensors
 
 **Notification Tool**

@@ -1,10 +1,10 @@
 * {
-  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", "Noto Sans CJK SC", "Noto Sans", sans-serif;
+  font-family: "JetBrains Mono", "HarmonyOS Sans", "HarmonyOS Sans SC", "Noto Sans CJK SC", "Noto Sans", sans-serif;
   font-size: 13px;
 }
 
 window {
-  background-color: rgba(250, 248, 246, 0.94);
+  background-color: rgba(250, 248, 246, 0.8);
   border: 1px solid rgba(74, 61, 54, 0.18);
   border-radius: 8px;
   color: #302c2a;

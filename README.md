@@ -80,6 +80,10 @@ These are some graphical tools on the desktop.
 - hyprshutdown
 - hyprland-qt-support
 
+**Input Method**
+- fcitx5-im
+- fcitx5-chinese-addons
+
 **Waybar and its Dependent Components**
 - waybar
 - cliphist
@@ -96,8 +100,11 @@ These are some graphical tools on the desktop.
 - mako
 
 **Library**
+- nwg-look
 - qt5-wayland
 - qt6-wayland
+- qt5ct
+- qt6ct
 
 **File Manager**
 - thunar

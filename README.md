@@ -74,7 +74,6 @@ These are some graphical tools on the desktop.
 
 **Hyprland Components**
 - hyprland
-- hyprlauncher
 - hyprpolkitagent
 - hyprpaper
 - hyprpicker
